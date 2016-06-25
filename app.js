@@ -1,4 +1,4 @@
-var a = 6;
+var a = 5;
 var b = 10;
 console.log(typeof a);
 var c = a+b+8;

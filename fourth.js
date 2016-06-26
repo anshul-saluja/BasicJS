@@ -33,12 +33,27 @@ console.log(x.filter(greatherThan18));
 
 
 //"map" is a function for changing the structure of an array
-m = [{name: "akash", age:"23"}, {name:"mummy", age: "56"}, {name:"papa", age:"60"}];
+m = [{name: "akash", age:23}, {name:"mummy", age: 56}, {name:"papa", age:60}];
 //now we want only names
 names = m.map(function(obj){
     return obj.name;
 });
 console.log(names);
+
+/**
+ * Reduce takes an array and gets a single element
+ */
+
+// find teh person with largest age
+var minimumAge = m.reduce(function (min, obj) {
+    if(obj.age<min)
+        return obj.age;
+    return min;
+});
+
+console.log(minimumAge);
+//yup, thats me
+
 
 
 
